@@ -1,0 +1,29 @@
+{
+  "name": "wp-plugin-helper",
+  "version": "1.0.0",
+  "description": "Automate plugin development operations like new Github release, production package creation, deployment history and much more",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress-plugin-helper",
+    "wordpress-development",
+    "wordpress-plugin",
+    "wordpress-helper",
+    "wordpress-module"
+  ],
+  "dependencies": {
+    "args-parser": "^1.3.0",
+    "chalk": "^4.1.2",
+    "copyfiles": "^2.4.1",
+    "enquirer": "^2.3.6",
+    "github-release": "^0.2.0",
+    "replace-in-file": "^6.3.5",
+    "rimraf": "^3.0.2",
+    "zip-a-folder": "^1.1.5"
+  },
+  "author": "Marco Ingraiti",
+  "license": "ISC"
+}
