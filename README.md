@@ -10,7 +10,7 @@ npx wp-plugin-helper
 
 ## HOW TO USE
 
-Create a release of versions 1.0.0
+Create a release of version 1.0.0
 
 ```bash
 npx wp-plugin-helper create-package --version="1.0.0" --release-message="My first plugin release"
