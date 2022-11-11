@@ -70,7 +70,7 @@ const createPackageZip = async (version) => {
     "releases/tmp_dir/",
     `releases/versions/${version}/${module_name}.zip`
   );
-  rimraf("releases/tmp_dir/*", () => console.log("Pacchetto grezzo eliminato"));
+  rimraf("releases/tmp_dir/*", () => console.log("Raw package deleted"));
 };
 
 const getLast = async () => {
