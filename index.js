@@ -78,7 +78,7 @@ const getLast = async () => {
     encoding: "UTF8",
   });
   const last = changelog.match(new RegExp("## \\[(.*)\\] -.*"))[1];
-  console.log(_success(last));
+  console.log(_success(`Current plugin version is: ${last}`));
 };
 
 const existChangelog = async (version) => {
@@ -211,7 +211,7 @@ const configWizard = async () => {
 
 const getConfig = () => {
   if (fs.existsSync("wp-plugin-helper.config.js")) {
-    const { config } = require("./wp-plugin-helper.config");
+    const { config } = require("../../wp-plugin-helper.config");
     return config;
   }
   return false;
