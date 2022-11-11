@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const args = require("args-parser")(process.argv);
 const { exec } = require("child_process");
 const { zip } = require("zip-a-folder");

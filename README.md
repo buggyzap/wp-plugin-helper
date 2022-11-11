@@ -1,14 +1,22 @@
-# WHAT THIS PACKAGE DO
+# What this package do
 
 This package let you to automate some Wordpress plugin development things, like .zip production package creation and github release publishing.
 
-## GET STARTED
+## Get started
 
 ```bash
 npx wp-plugin-helper
 ```
 
-## HOW TO USE
+If you want to speed up npx process, run
+
+```bash
+npm i wp-plugin-helper
+```
+
+to get fastest access to node packages.
+
+## How to use
 
 Create a release of version 1.0.0
 
@@ -20,7 +28,7 @@ It changes the version in your main plugin file, create a new package inside **r
 
 It checks the changelog version in CHANGELOG.md file before do that.
 
-## OPTIONAL PARAMETERS
+## Optional parameters
 
 ### Add a message on github release
 
