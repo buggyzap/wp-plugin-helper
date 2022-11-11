@@ -1,6 +1,10 @@
 [![dependency - wp-plugin-helper](https://img.shields.io/badge/dependency-wp--plugin--helper-red?logo=npm&logoColor=white)](https://www.npmjs.com/package/wp-plugin-helper)
 
-# What this package do
+# Wordpress Plugin Helper
+
+Wordpress plugin development made easy!
+
+## What this package do
 
 This package let you to automate some Wordpress plugin development things, like .zip production package creation and github release publishing.
 
