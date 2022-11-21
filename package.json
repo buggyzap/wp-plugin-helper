@@ -1,6 +1,6 @@
 {
   "name": "wp-plugin-helper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Automate plugin development operations like new Github release, production package creation, deployment history and much more",
   "main": "index.js",
   "bin": "./index.js",
