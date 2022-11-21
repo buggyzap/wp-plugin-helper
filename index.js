@@ -47,6 +47,8 @@ const showHelp = () => {
 
     ${_command("--release-message")} => Add a message on github release
 
+    ${_command("--skip-check")} => Skip the changelog check
+
     ${_command(
       "--git-release"
     )} => Create a Github Release, change it to false if you want to create only local .zip package. Default: true
@@ -114,14 +116,16 @@ const createPackage = async (version, message = "") => {
     console.log(_error("Specify a version release with --version"));
     return;
   }
-  const changelogExist = await existChangelog(version);
-  if (!changelogExist) {
-    console.log(
-      _error(
-        "You cannot create a new release before specify a new version in CHANGELOG.md"
-      )
-    );
-    return;
+  if (!args["skip-check"]) {
+    const changelogExist = await existChangelog(version);
+    if (!changelogExist) {
+      console.log(
+        _error(
+          "You cannot create a new release before specify a new version in CHANGELOG.md"
+        )
+      );
+      return;
+    }
   }
   const release_to_git = args["git-release"] !== "false";
   console.log(`Creating... ${version}`);
